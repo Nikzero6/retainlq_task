@@ -1,0 +1,130 @@
+
+/* elements */
+body{
+  background: linear-gradient(30deg, #5257ce, 60%, #b651c2);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+/* containers */
+.card {
+  background-color: #FFFFFF;
+  display: flex;
+  width: 1050px;
+  height: 500px;
+  margin: 5rem auto;
+  border-radius: 1rem;
+  box-shadow: 0px 11px 35px 2px rgb(0 0 0 / 14%);
+}
+.flex-left{
+  flex: 50%;
+  position: relative;
+  padding-left: 50px;
+}
+.flex-right{
+  flex: 50%;
+  padding-right: 50px;
+}
+.left-img{
+  position: absolute;
+  width: 60%;
+  top: 23%;
+  left: 20%;
+}
+
+/* right box */
+.member {
+   padding-top: 70px;
+   font-weight: bold;
+   font-size: 23px;
+}
+
+/* login form */
+form.form1 {
+    padding-top: 40px;
+}
+.input {
+  width: 50%;
+  color: #9e9f9e;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: #e6e6e6;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 27px;
+}
+.input-field{
+  -webkit-appearance: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.submit {
+  cursor: pointer;
+  color: #fff;
+  background: #57b846;
+  border: 0;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+.forgot {
+    font-weight: lighter;
+    margin-top: -10px;
+}
+.forgot span{
+  font-weight: bold;
+}
+
+.account {
+  margin-top: 60px;
+}
+.arrow{
+  padding-left: 10px;
+}
+/* media queries */
+
+/* javascript actions */
+#message {
+  display: none;
+    background: #e6e6e6;
+    color: #000;
+    position: absolute;
+    padding: 30px;
+    left: 350px;
+    top: 210px;
+    border-radius: 20px;
+}
+
+#message p {
+  font-size: 14px;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}

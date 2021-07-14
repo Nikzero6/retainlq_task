@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Retainlq Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/e3eab5d18a.js" crossorigin="anonymous"></script>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body onload='document.form1.email.focus()'>
+
+    <div class="card">
+
+      <div class="flex-left">
+        <img src="images/left-image.jpg" class="left-img" alt="left-img">
+      </div>
+
+      <div class="flex-right">
+        <h2 class="member" align="center">Member login</h2>
+
+        <form name="form1" class="form1" action="index.html" method="post">
+
+          <div class="input">
+            <i class="fas fa-envelope"></i><input id="usrname" name="email" class="input-field" type="text" placeholder="Email" required>
+          </div>
+          <div class="input">
+            <i class="fas fa-lock"></i><input id="psw" class="input-field psw" type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+          </div>
+          <div id="message">
+            <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+          </div>
+          <div class="input submit">
+            <input class="input-field submit" type="submit" name="login" value="LOGIN" onclick="ValidateEmail(document.form1.email)">
+          </div>
+          <p class="forgot"><a href="#">Forgot <span class="forgot-bold">Username/Password?</span></p>
+
+          <p class="account"><a href="#">Create your Account<i class="fas fa-long-arrow-alt-right arrow"></i></a></p>
+        </form>
+
+      </div>
+    </div>
+
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
