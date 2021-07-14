@@ -11,7 +11,7 @@ function ValidateEmail(inputText)
   if(!inputText.value.match(mailformat)){
     alert("You have entered an invalid email address!");
     document.form1.text1.focus();
-    return false;
+    // return false;
   }
 }
 
